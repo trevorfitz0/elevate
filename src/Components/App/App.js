@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
       <div>
         <Header/>
-        <Articles/>
+        <Articles articles={ this.state.articles }/>
       </div>
     )
   }
