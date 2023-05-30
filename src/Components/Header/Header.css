@@ -1,0 +1,9 @@
+.head {
+    background-color: var(--black);
+    height: 80px;
+    color: var(--creme);
+}
+
+.title {
+    padding: 25px;
+}
