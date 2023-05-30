@@ -1,0 +1,15 @@
+
+.article-section {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article-box {
+    border-radius: 10px;
+    background-color: var(--dark);
+    height: 40vh;
+    width: 45vw;
+    margin-top: 10vh;
+}
