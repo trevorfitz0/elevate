@@ -1,15 +1,16 @@
 import React from 'react'
 import './Articles.css'
+import { NavLink } from 'react-router-dom'
 
 function Articles( { articles } ) {
 
     const topArticles =  
         articles.map(article => {
             return (
-                <div className='article-box'>
+                <NavLink to={`article/${article.title.replace(/\s+/g, '')}`} className='article-box'>
                     <img alt={ article.title } className='article-image' src={ article.urlToImage }></img>
                     <h2 className='article-title'>{article.title}</h2>
-                </div>
+                </NavLink>
                 )
         })
     
