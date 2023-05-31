@@ -14,7 +14,6 @@ function Articles( { articles } ) {
                 )
         })
     
-
   return (
     <div>
         <div className='title-section'>

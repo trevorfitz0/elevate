@@ -3,8 +3,9 @@ import { getNews } from '../../APICalls';
 import Header from '../Header/Header';
 import getSampleData from '../../SampleData';
 import Articles from '../Articles/Articles';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import Article from '../Article/Article';
+import ErrorPage from '../ErrorPage/ErrorPage';
 
 export default class App extends Component {
 
@@ -35,6 +36,8 @@ export default class App extends Component {
           console.log(article)
           return <Article article={ article } />
         }}/>
+          <Route exact path="/404"><ErrorPage/></Route>
+          <Route path="*"><Redirect to="/404"/></Route>
         </Switch>
       </div>
     )
