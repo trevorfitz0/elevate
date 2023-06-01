@@ -4,10 +4,11 @@ import { NavLink } from 'react-router-dom'
 
 function Articles( { articles } ) {
 
+    console.log(articles)
+
     const [filter, setFilter] = useState(articles)
 
     const filterArticles = (value) => {
-        console.log('yea')
         setFilter(articles.filter(article => article.title.includes(value)))
         console.log(filter)
     }
@@ -23,7 +24,7 @@ function Articles( { articles } ) {
         })
     
   return (
-    <div>
+    <div className='page'>
         <div className='title-section'>
             <h1 className='page-title'>Top Articles</h1>
             <input placeholder='Search for articles' onChange={(e) => filterArticles(e.target.value)}></input>
