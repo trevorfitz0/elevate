@@ -11,6 +11,7 @@ function Article( { article } ) {
         <section className='single-article-box'>
             <section className='single-article-title-section'>
                 <h1 className='single-article-title'>{article.title}</h1>
+                <div className='line-break'></div>
             </section>
             <div className='single-article-data'>
                 <img className='single-article-image' alt={ article.title } src={article.urlToImage}></img>

@@ -1,0 +1,15 @@
+
+.error-page {
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--creamy);
+    display: flex;
+    justify-content: center;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
