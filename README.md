@@ -32,3 +32,9 @@ This application is my Mod 4 Mock Take Home project!
 - Made a clean looking UI with router implementation
 - Created very simple readable code with as few unnessesary lines as possible
 - I had a challenge creating the .env file and transfering my API access token over to my project
+
+
+## My Process for project completion
+- Analyze the News API ad write down end points I would like to use
+- Select color pallete and website name, ELEVATE
+- Make List of React components that needed to be created
