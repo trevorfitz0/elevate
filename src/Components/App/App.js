@@ -18,24 +18,23 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    // Sample data for testing
     // await this.getNewsData()
     // const sample = getSampleData()
     // this.setState({ articles: sample })
-  }
-
-  componentWillMount() {
     this.getNewsData()
   }
 
   getNewsData() {
     getNews().then(data => {
-      data.articles.map(article => {
+      const filteredData = data.articles.map(article => {
         if(article.title.includes("%")) {
-          article.title = encodeURIComponent(article.title);
+          article.title = 'Invalid Title Data'
+          return article
         }
-        return null
+        return article
     })
-      this.setState({ articles: data.articles,  loading: false })
+      this.setState({ articles: filteredData,  loading: false })
     })
   }
 

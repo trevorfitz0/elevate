@@ -4,8 +4,6 @@ import { NavLink } from 'react-router-dom'
 
 function Articles( { articles } ) {
 
-    console.log(articles)
-
     const [filter, setFilter] = useState(articles)
 
     const filterArticles = (value) => {
@@ -16,7 +14,7 @@ function Articles( { articles } ) {
     const topArticles =  
         filter.map(article => {
             return (
-                <NavLink to={`article/${article.title.replace(/\s+/g, '')}`} className='article-box'>
+                <NavLink key={ article.title } to={`article/${article.title.replace(/\s+/g, '')}`} className='article-box'>
                     <img alt={ article.title } className='article-image' src={ article.urlToImage }></img>
                     <h2 className='article-title'>{article.title}</h2>
                 </NavLink>
