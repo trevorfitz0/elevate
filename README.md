@@ -9,11 +9,11 @@ Unfortunately, since the app uses Secret API Keys through the News API, it's una
 <summary> <h2>Preview</h2> </summary>
 <br>
 
-Home Page
+<h1 align=center>Home Page</h1>
 <img width="1423" alt="Screenshot 2023-04-21 at 12 58 41 AM" src="https://github.com/trevorfitz0/elevate/assets/57536985/7b6326c8-de10-4291-a8f5-80f0297b81c7">
 
 
-Backdrop Selection
+<h1 align=center>Article View Page</h1>
 <img width="1423" alt="Screenshot 2023-04-21 at 12 59 25 AM" src="https://github.com/trevorfitz0/elevate/assets/57536985/2484d314-84e2-4eaa-ab75-05c38acb18e1">
 
 
