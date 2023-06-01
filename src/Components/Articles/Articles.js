@@ -7,7 +7,7 @@ function Articles( { articles } ) {
     const [filter, setFilter] = useState(articles)
 
     const filterArticles = (value) => {
-        setFilter(articles.filter(article => article.title.includes(value)))
+        setFilter(articles.filter(article => article.title.toLowerCase().includes(value.toLowerCase())))
         console.log(filter)
     }
 
