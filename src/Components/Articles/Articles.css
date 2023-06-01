@@ -4,7 +4,18 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 20px;
+    align-items: center;
+}
+
+input {
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3vh;
 }
 
 .page-title {
@@ -24,7 +35,7 @@
     border-radius: 10px;
     background-color: var(--dark);
     height: 40vh;
-    width: 45vw;
+    width: 40vw;
     margin-top: 14vh;
     transition: .2s;
 }
@@ -39,9 +50,8 @@
 .article-image {
     border-radius: 10px;
     height: 40vh;
-    width: 45vw;
-    filter: blur(3px);
-    opacity: .4;
+    width: 40vw;
+    opacity: .9;
     transition: .2s;
 }
 
@@ -53,6 +63,6 @@
 }
 
 .article-image:hover {
-    filter: blur(2px);
+    filter: blur(1px);
     opacity: .6;
 }

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--creamy);
-    position: sticky;
+    overflow: none;
 }
 
 .single-article-title-section {
@@ -16,10 +16,17 @@
 }
 
 .single-article-title {
+    text-align: center;
     color: var(--white);
     margin-top: 5vh;
     font-size: 4vh;
     max-width: 80vw;
+}
+
+.line-break {
+    width: 80vw;
+    height: .2vh;
+    background-color: var(--creme);
 }
 
 .single-article-box {
@@ -54,12 +61,15 @@
 .home-button {
     background-color: var(--creamy);
     border-radius: 5px;
-    height: 5vh;
+    height: 4vh;
     width: 10vw;
-    align-items: center;
-    text-align: center;
     color: var(--dark);
     transition: .2s;
+    margin-top: 8vh;
+    font-size: 2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .home-button:hover {
