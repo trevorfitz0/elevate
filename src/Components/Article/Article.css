@@ -58,7 +58,7 @@
     border-radius: 20px;
 }
 
-.home-button {
+.link {
     background-color: var(--creamy);
     border-radius: 5px;
     height: 4vh;
@@ -66,13 +66,13 @@
     color: var(--dark);
     transition: .2s;
     margin-top: 8vh;
-    font-size: 2vh;
-    text-align: center;
+    font-size: 3vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.home-button:hover {
+.link:hover {
     background-color: var(--creme);
     scale: 1.05;
 }
