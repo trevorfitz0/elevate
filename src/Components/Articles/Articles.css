@@ -1,4 +1,8 @@
 
+.page {
+    height: 100vh;
+}
+
 .title-section {
     background-color: var(--creamy);
     width: 100vw;
@@ -24,6 +28,7 @@ input {
 
 .article-section {
     background-color: var(--creamy);
+    padding-bottom: 15vh;
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -44,7 +49,8 @@ input {
     position:inherit;
     color: var(--black);
     padding: 10px;
-    bottom: 0;
+    text-decoration: none;
+    text-align: center;
 }
 
 .article-image {
@@ -55,8 +61,7 @@ input {
     transition: .2s;
 }
 
-.article-box:hover
-{
+.article-box:hover {
     scale: 1.02;
     z-index: 1;
     cursor: pointer;

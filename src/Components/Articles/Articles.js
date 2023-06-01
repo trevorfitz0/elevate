@@ -7,15 +7,14 @@ function Articles( { articles } ) {
     const [filter, setFilter] = useState(articles)
 
     const filterArticles = (value) => {
-        console.log('yea')
-        setFilter(articles.filter(article => article.title.includes(value)))
+        setFilter(articles.filter(article => article.title.toLowerCase().includes(value.toLowerCase())))
         console.log(filter)
     }
 
     const topArticles =  
         filter.map(article => {
             return (
-                <NavLink to={`article/${article.title.replace(/\s+/g, '')}`} className='article-box'>
+                <NavLink key={ article.title } to={`article/${article.title.replace(/\s+/g, '')}`} className='article-box'>
                     <img alt={ article.title } className='article-image' src={ article.urlToImage }></img>
                     <h2 className='article-title'>{article.title}</h2>
                 </NavLink>
@@ -23,7 +22,7 @@ function Articles( { articles } ) {
         })
     
   return (
-    <div>
+    <div className='page'>
         <div className='title-section'>
             <h1 className='page-title'>Top Articles</h1>
             <input placeholder='Search for articles' onChange={(e) => filterArticles(e.target.value)}></input>

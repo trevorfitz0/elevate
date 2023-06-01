@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Article.css'
 
 function Article( { article } ) {
-
-    console.log(article)
 
   return (
     <div className='single-article-page'>
@@ -15,15 +12,9 @@ function Article( { article } ) {
             </section>
             <div className='single-article-data'>
                 <img className='single-article-image' alt={ article.title } src={article.urlToImage}></img>
-                <p>
-                    {
-                        article.description
-                    }
-                </p>
+                <p>{article.description}</p>
             </div>
-            <NavLink to={`/`} className="link">
-                    Back Home
-            </NavLink>
+            <NavLink to={`/`} className="link">Back Home</NavLink>
         </section>
     </div>
   )
