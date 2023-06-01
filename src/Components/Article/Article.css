@@ -59,7 +59,7 @@
 }
 
 .link {
-    background-color: var(--creamy);
+    background-color: var(--creme);
     border-radius: 5px;
     height: 4vh;
     width: 10vw;
@@ -70,9 +70,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .link:hover {
-    background-color: var(--creme);
+    background-color: var(--creamy);
     scale: 1.05;
 }
